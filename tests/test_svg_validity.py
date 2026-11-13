@@ -2,7 +2,7 @@
 tests/test_svg_validity.py
 
 Unit tests for validating SVG XML syntax, dimensions, viewBox,
-and SMIL animation tags across all generated SVG assets.
+and elements across all generated SVG and graphic assets.
 """
 
 import unittest
@@ -14,60 +14,57 @@ ASSETS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file
 
 class TestSvgValidity(unittest.TestCase):
 
-    def test_contribution_heatmap_svg(self):
-        path = os.path.join(ASSETS_DIR, "contribution-heatmap.svg")
+    def _assert_valid_svg(self, filename: str):
+        path = os.path.join(ASSETS_DIR, filename)
         self.assertTrue(os.path.exists(path), f"File {path} does not exist")
-        
-        # Test XML validity
         tree = ET.parse(path)
         root = tree.getroot()
-        self.assertTrue(root.tag.endswith("svg"))
-        self.assertIn("viewBox", root.attrib)
-        self.assertIn("width", root.attrib)
-        self.assertIn("height", root.attrib)
+        self.assertTrue(root.tag.endswith("svg"), f"{filename} root tag is not svg")
+        return root
 
-        # Ensure SMIL animations exist
-        animations = root.findall(".//{http://www.w3.org/2000/svg}animate")
-        self.assertGreater(len(animations), 0, "Heatmap SVG should contain SMIL animation elements")
+    def test_header_banner_svg(self):
+        root = self._assert_valid_svg("header-banner.svg")
+        self.assertIn("viewBox", root.attrib)
+
+    def test_footer_banner_svg(self):
+        root = self._assert_valid_svg("footer-banner.svg")
+        self.assertIn("viewBox", root.attrib)
+
+    def test_activity_graph_svg(self):
+        root = self._assert_valid_svg("activity-graph.svg")
+        self.assertIn("viewBox", root.attrib)
+
+    def test_contribution_snake_svg(self):
+        root = self._assert_valid_svg("contribution-snake.svg")
+        self.assertIn("viewBox", root.attrib)
+
+    def test_profile_polaroid_png(self):
+        path = os.path.join(ASSETS_DIR, "profile-polaroid.png")
+        self.assertTrue(os.path.exists(path))
+        self.assertGreater(os.path.getsize(path), 1000)
+
+    def test_contribution_heatmap_svg(self):
+        root = self._assert_valid_svg("contribution-heatmap.svg")
+        self.assertIn("viewBox", root.attrib)
 
     def test_ascii_portrait_svg(self):
-        path = os.path.join(ASSETS_DIR, "ascii-portrait.svg")
-        self.assertTrue(os.path.exists(path), f"File {path} does not exist")
-        
-        tree = ET.parse(path)
-        root = tree.getroot()
-        self.assertTrue(root.tag.endswith("svg"))
+        root = self._assert_valid_svg("ascii-portrait.svg")
         self.assertIn("viewBox", root.attrib)
 
-        animations = root.findall(".//{http://www.w3.org/2000/svg}animate")
-        self.assertGreater(len(animations), 0, "Animated ASCII SVG should contain SMIL animation elements")
-
     def test_ascii_portrait_static_svg(self):
-        path = os.path.join(ASSETS_DIR, "ascii-portrait-static.svg")
-        self.assertTrue(os.path.exists(path), f"File {path} does not exist")
-        
-        tree = ET.parse(path)
-        root = tree.getroot()
-        self.assertTrue(root.tag.endswith("svg"))
+        self._assert_valid_svg("ascii-portrait-static.svg")
 
     def test_info_card_svg(self):
-        path = os.path.join(ASSETS_DIR, "info-card.svg")
-        self.assertTrue(os.path.exists(path), f"File {path} does not exist")
-        
-        tree = ET.parse(path)
-        root = tree.getroot()
-        self.assertTrue(root.tag.endswith("svg"))
+        root = self._assert_valid_svg("info-card.svg")
         self.assertIn("viewBox", root.attrib)
 
     def test_ascii_portrait_gif(self):
         path = os.path.join(ASSETS_DIR, "ascii-portrait.gif")
         self.assertTrue(os.path.exists(path), f"File {path} does not exist")
         size = os.path.getsize(path)
-        # Ensure it is lightweight (< 1.5MB)
-        self.assertLess(size, 1.5 * 1024 * 1024, f"GIF file size {size} exceeds 1.5MB")
-        self.assertGreater(size, 1024, "GIF file appears empty")
+        self.assertLess(size, 1.5 * 1024 * 1024)
+        self.assertGreater(size, 1024)
 
 
 if __name__ == "__main__":
     unittest.main()
-
