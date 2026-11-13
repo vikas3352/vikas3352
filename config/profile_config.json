@@ -1,0 +1,83 @@
+{
+  "developer": {
+    "name": "Vikas Jangid",
+    "username": "vikas3352",
+    "github_url": "https://github.com/vikas3352",
+    "titles": [
+      "Full Stack Developer",
+      "Software Engineer",
+      "Backend Developer"
+    ],
+    "bio": "Passionate Full Stack Developer crafting resilient backend microservices, intuitive modern user interfaces, and automated CI/CD workflows.",
+    "location": "India",
+    "system_info": {
+      "host": "vikas@developer-station",
+      "os": "macOS / Linux",
+      "shell": "zsh 5.9",
+      "terminal": "xterm-256color",
+      "uptime": "99.98% active coding"
+    }
+  },
+  "tech_stack": {
+    "languages": ["TypeScript", "JavaScript", "Python", "SQL", "HTML5", "CSS3"],
+    "frontend": ["React", "Next.js", "Redux", "Tailwind CSS"],
+    "backend": ["Node.js", "Express.js", "REST APIs", "JWT Authentication"],
+    "databases": ["MongoDB", "PostgreSQL", "Mongoose"],
+    "devops_tools": ["GitHub Actions", "CI/CD", "Docker", "Git", "Postman", "Linux"]
+  },
+  "featured_projects": [
+    {
+      "name": "DebugFlow",
+      "description": "Intelligent error tracking and debugging workflow pipeline with real-time log analysis.",
+      "tags": ["Node.js", "TypeScript", "REST APIs", "CI/CD"],
+      "url": "https://github.com/vikas3352"
+    },
+    {
+      "name": "InterviewPAL",
+      "description": "AI-driven mock interview simulator and technical preparation platform.",
+      "tags": ["React", "TypeScript", "Node.js", "MongoDB"],
+      "url": "https://github.com/vikas3352"
+    },
+    {
+      "name": "DWPS Alwar Web Platform",
+      "description": "Complete institutional portal with dynamic administrative dashboard.",
+      "tags": ["Full Stack", "React", "Node.js", "Express"],
+      "url": "https://github.com/rizeworldcode/dwpsalwar"
+    },
+    {
+      "name": "Institute Rize Management",
+      "description": "Comprehensive student, faculty, and curriculum management system.",
+      "tags": ["React", "Node.js", "MongoDB", "Auth"],
+      "url": "https://github.com/rizeworldcode/Institute-rize-"
+    },
+    {
+      "name": "Zoniraz Jewellery",
+      "description": "E-commerce platform featuring catalog browsing, cart management, and secure checkout.",
+      "tags": ["React", "Node.js", "MongoDB", "Payment"],
+      "url": "https://github.com/zonirazjewelhouse9911/zonirazjewellery"
+    },
+    {
+      "name": "Shine Limos Fleet Service",
+      "description": "Luxury chauffeur and limousine booking and dispatch management web application.",
+      "tags": ["JavaScript", "Express.js", "REST APIs"],
+      "url": "https://github.com/shinelimos9-del/shinelimos"
+    },
+    {
+      "name": "Personal Developer Portfolio",
+      "description": "Interactive developer portfolio showcasing projects, experience, and technical achievements.",
+      "tags": ["React", "JavaScript", "Tailwind CSS"],
+      "url": "https://github.com/vikas3352/personalPortfolio"
+    }
+  ],
+  "theme": {
+    "background": "#0d1117",
+    "border": "#30363d",
+    "text_primary": "#c9d1d9",
+    "text_secondary": "#8b949e",
+    "accent_green": "#39d353",
+    "accent_green_bright": "#00ff66",
+    "accent_green_dim": "#0e4429",
+    "prompt_symbol": "❯"
+  }
+}
+

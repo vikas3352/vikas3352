@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547 710" width="547" height="710" style="background-color: #0d1117; border-radius: 8px; border: 1px solid #30363d; font-family: 'Fira Code', 'Courier New', monospace;">
+
+  <defs>
+    <style>
+      .terminal-title { fill: #8b949e; font-size: 11px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+      .prompt-user { fill: #58a6ff; font-weight: 600; font-size: 12px; }
+      .prompt-cmd { fill: #39d353; font-weight: 500; font-size: 12px; }
+      .prompt-at { fill: #8b949e; }
+      .ascii-row { fill: #39d353; font-size: 11.5px; font-family: 'Fira Code', 'Courier New', monospace; white-space: pre; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="100%" height="32" fill="#161b22" rx="8" />
+  <rect x="0" y="24" width="100%" height="8" fill="#161b22" />
+  <line x1="0" y1="32" x2="100%" y2="32" stroke="#30363d" stroke-width="1" />
+  <circle cx="16" cy="16" r="5" fill="#ff5f56" />
+  <circle cx="32" cy="16" r="5" fill="#ffbd2e" />
+  <circle cx="48" cy="16" r="5" fill="#27c93f" />
+  <text x="273" y="20" text-anchor="middle" class="terminal-title">vikas3352@dev-station: ~ (ascii-portrait)</text>
+  <text x="24" y="50"><tspan class="prompt-user">vikas3352</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-user">station</tspan><tspan class="prompt-at">:~$</tspan> <tspan class="prompt-cmd">cat portrait.ascii</tspan></text>
+  <g id="ascii-matrix">
+    <text x="24" y="72" class="ascii-row">                                                                </text>
+    <text x="24" y="85" class="ascii-row">                    #*#%###%#%#*                                </text>
+    <text x="24" y="99" class="ascii-row">                 #**==+*+=+**====***                            </text>
+    <text x="24" y="112" class="ascii-row">              #*==--::.:::--==:.:==++#+                         </text>
+    <text x="24" y="126" class="ascii-row">             **-:...     :. .::::-:-=+##                        </text>
+    <text x="24" y="139" class="ascii-row">             +:. .  :::..  .   ::..-==++#                       </text>
+    <text x="24" y="153" class="ascii-row">             -=:-*++*==+-....    .. :=+=*#                      </text>
+    <text x="24" y="166" class="ascii-row">               %%%######**==--:..::  :=-=*#                     </text>
+    <text x="24" y="180" class="ascii-row">              :#+..:-=+##%%*+==-:  .:.::-*#                     </text>
+    <text x="24" y="193" class="ascii-row">              +##=..-:-+#%%#+=+==+= .:..:+#                     </text>
+    <text x="24" y="207" class="ascii-row">             %%##*=+*###%%%%++#**%#*-  .:=*                     </text>
+    <text x="24" y="220" class="ascii-row">            #%*#=+%%%%#%###*=%#==%%%+ :.-=                      </text>
+    <text x="24" y="234" class="ascii-row">            +-.:-+*#%#***+=:*@*-**%+ ..-*                       </text>
+    <text x="24" y="247" class="ascii-row">             -. ..=#*+=++-::%+#%%%+:..:-=                       </text>
+    <text x="24" y="261" class="ascii-row">             +==-:=+--=-:...*===**:..:-                         </text>
+    <text x="24" y="274" class="ascii-row">             --*#+:---::... :*##*+:.:=                          </text>
+    <text x="24" y="288" class="ascii-row">            *-=-::...  . ...:+##*+-:-                           </text>
+    <text x="24" y="301" class="ascii-row">            =:.   .  .::::-=+###**##                            </text>
+    <text x="24" y="315" class="ascii-row">              -:::-===+==-=++***++#%                            </text>
+    <text x="24" y="328" class="ascii-row">                   **+++====+***+-+%%                           </text>
+    <text x="24" y="342" class="ascii-row">                    *=-==---=+++==:-+#                          </text>
+    <text x="24" y="355" class="ascii-row">                    #*------===+==:. -+*##*                     </text>
+    <text x="24" y="369" class="ascii-row">                     *-..:---===--=====+=+*+*+                  </text>
+    <text x="24" y="382" class="ascii-row">                    +=-  :-::====++**===-::-**++*               </text>
+    <text x="24" y="396" class="ascii-row">                 ###-=-. :==++++*##**++++=====+*#*#%            </text>
+    <text x="24" y="409" class="ascii-row">              ###%%*=---===**#***++++++++++===---=++#%          </text>
+    <text x="24" y="423" class="ascii-row">          #*++###*+++=+++++=+==++++***++#*+*=-::-:--=***        </text>
+    <text x="24" y="436" class="ascii-row">        **++--+++==------=-===*#****+-*%==%-.:-+-.::::=+=       </text>
+    <text x="24" y="450" class="ascii-row">       **-..=====--=--=++==+**%%##+==%%--@-.:=-:::-:-+==:-      </text>
+    <text x="24" y="463" class="ascii-row">      =+::.++=------=+++*+**%%%%#*++@#:-%+ :=-=::::::=+++.-     </text>
+    <text x="24" y="477" class="ascii-row">      -:-:+*======-===+**#%%%%##*+*#*-:+%. ==+=:--:--==*++.+    </text>
+    <text x="24" y="490" class="ascii-row">     =-.=**+==========*##%%%###+++++++=#= :=-+--=---:=+=***.    </text>
+    <text x="24" y="504" class="ascii-row">     -.-*#*+==------=+*#%%#****==+++-=*#: -..*----:-:-++=##-    </text>
+    <text x="24" y="517" class="ascii-row">     - -***+=--:::::==*##**===--=======*. : :=----:::-=*+=##    </text>
+    <text x="24" y="531" class="ascii-row">     = .#+++=--:::..-*#*+++=----------=-: . --===::-:=-=+==##   </text>
+    <text x="24" y="544" class="ascii-row">    ** :*++==-:::...=#+++=------------:.:   -=*+--++==-+*++**   </text>
+    <text x="24" y="558" class="ascii-row">    #*..**+-=-.:.. :*#++-===-:::---:--:.:  :=+*=++=*+++=++++*   </text>
+    <text x="24" y="571" class="ascii-row">    *+: +#-:-=....:=%**=-+*++-..:--:--=-.: :++*+++#+*==+===++   </text>
+    <text x="24" y="585" class="ascii-row">   ##=: .*..*=..:--#@+*--*#*==--:-===::=-:..#****=-=*+-====+*+  </text>
+    <text x="24" y="598" class="ascii-row">   ++--  +.:#- :-==%%++--=#*=+*+==-=*=:::::.*#**+*##*=++-===**  </text>
+    <text x="24" y="612" class="ascii-row">   *-=-  = -#:.-==+%*++--=%#-=+++++***=-:::.=#*++====**======+  </text>
+    <text x="24" y="625" class="ascii-row">  **=-:  . =+:-=+=#%=*=::-##+==+****##*=-::.-%**#%@@@%#*+=--=#  </text>
+    <text x="24" y="639" class="ascii-row">  +-::.   .+=:=+**%*+#--::+#**++****##*=-::. +%@%+:           : </text>
+    <text x="24" y="652" class="ascii-row">          :+-:=*+#%+#+--:-=**++*******+=-::. .:.                </text>
+    <text x="24" y="666" class="ascii-row">          =+:-+++##+#+-::-=*******###*==---.                :   </text>
+    <text x="24" y="679" class="ascii-row">          ++-+**##*#*=-:.-=*#*****##%#*+=-:...                  </text>
+    <text x="24" y="693" class="ascii-row">          :+=+######*=-::-=##****##%%%%*=::.-:-.                </text>
+  </g>
+</svg>

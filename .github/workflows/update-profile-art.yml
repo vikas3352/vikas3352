@@ -1,0 +1,62 @@
+name: Update Contribution Heatmap
+
+on:
+  schedule:
+    # Run daily at 06:17 UTC
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-heatmap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install minimal workflow dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-actions.txt
+
+      - name: Fetch real contribution calendar data
+        run: |
+          python scripts/fetch_contributions.py vikas3352
+
+      - name: Render updated SVG contribution heatmap
+        run: |
+          python scripts/render_heatmap_svg.py
+
+      - name: Validate generated SVG well-formedness
+        run: |
+          python -c "
+          import xml.etree.ElementTree as ET
+          ET.parse('assets/contribution-heatmap.svg')
+          print('SVG XML validation passed.')
+          "
+
+      - name: Commit and push changes if updated
+        run: |
+          # Explicitly stage ONLY allowed generated output paths
+          git add data/contributions.json assets/contribution-heatmap.svg
+
+          # Check if there are staged changes
+          if git diff --staged --quiet; then
+            echo "No changes in contribution data or heatmap SVG. Skipping commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(profile): update contribution heatmap [skip ci]"
+            git push
+          fi
+

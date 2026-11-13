@@ -1,0 +1,34 @@
+# Virtual environments & Python cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environment & OS files
+.env
+.env.local
+.DS_Store
+Thumbs.db
+:memory:.ses
+*.ses
+
+# Source photograph & private image-processing intermediates (CRITICAL)
+item_5.png
+source-photo.*
+source-prepped.png
+*.orig.png
+*.orig.jpg
+*.orig.jpeg
+prepped_*.png
+temp_frames/
+*.mask.png
+
+# Build & temp files
+build/
+dist/
+*.egg-info/
+
