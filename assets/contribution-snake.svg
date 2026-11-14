@@ -378,7 +378,8 @@
   <rect x="752" y="58" width="11" height="11" rx="2" fill="#160728" />
   <rect x="752" y="72" width="11" height="11" rx="2" fill="#160728" />
   <rect x="752" y="86" width="11" height="11" rx="2" fill="#721b82" />
-  <rect x="752" y="100" width="11" height="11" rx="2" fill="#3c1053" />
+  <rect x="752" y="100" width="11" height="11" rx="2" fill="#721b82" />
+  <rect x="752" y="114" width="11" height="11" rx="2" fill="#3c1053" />
   <!-- Animated Neon Snake -->
   <rect width="11" height="11" rx="2" fill="#01cdfe" filter="url(#snakeGlow)">
     <animateMotion path="M 94,58 L 192,58 L 192,100 L 332,100 L 332,44 L 514,44 L 514,114 L 696,114 L 696,72 L 752,72 L 752,30 L 94,30 L 94,58 Z" dur="12s" repeatCount="indefinite" />
