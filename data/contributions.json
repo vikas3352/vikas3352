@@ -1,10 +1,10 @@
 {
   "metadata": {
     "username": "vikas3352",
-    "fetched_at_utc": "2026-11-21T14:43:16.702108+00:00",
-    "start_date": "2025-11-16",
-    "end_date": "2026-11-21",
-    "total_days_parsed": 371,
+    "fetched_at_utc": "2026-11-22T14:39:38.863263+00:00",
+    "start_date": "2025-11-23",
+    "end_date": "2026-11-22",
+    "total_days_parsed": 365,
     "total_weeks": 53
   },
   "stats": {
@@ -29,48 +29,6 @@
     }
   },
   "days": [
-    {
-      "date": "2025-11-16",
-      "count": 0,
-      "level": 0,
-      "gh_weekday": 0
-    },
-    {
-      "date": "2025-11-17",
-      "count": 0,
-      "level": 0,
-      "gh_weekday": 1
-    },
-    {
-      "date": "2025-11-18",
-      "count": 0,
-      "level": 0,
-      "gh_weekday": 2
-    },
-    {
-      "date": "2025-11-19",
-      "count": 0,
-      "level": 0,
-      "gh_weekday": 3
-    },
-    {
-      "date": "2025-11-20",
-      "count": 0,
-      "level": 0,
-      "gh_weekday": 4
-    },
-    {
-      "date": "2025-11-21",
-      "count": 0,
-      "level": 0,
-      "gh_weekday": 5
-    },
-    {
-      "date": "2025-11-22",
-      "count": 0,
-      "level": 0,
-      "gh_weekday": 6
-    },
     {
       "date": "2025-11-23",
       "count": 0,
@@ -2254,46 +2212,15 @@
       "count": 0,
       "level": 0,
       "gh_weekday": 6
+    },
+    {
+      "date": "2026-11-22",
+      "count": 0,
+      "level": 0,
+      "gh_weekday": 0
     }
   ],
   "weeks": [
-    [
-      {
-        "date": "2025-11-16",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-17",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-18",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-19",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-20",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-21",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-22",
-        "count": 0,
-        "level": 0
-      }
-    ],
     [
       {
         "date": "2025-11-23",
@@ -4217,6 +4144,19 @@
         "count": 0,
         "level": 0
       }
+    ],
+    [
+      {
+        "date": "2026-11-22",
+        "count": 0,
+        "level": 0
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   ]
 }
